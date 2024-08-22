@@ -131,12 +131,9 @@ def create_product_csv(query, data):
     return product_ids
 
 def file_to_list(file_path):
-    # Initialize an empty list to store sentences
     query_list = []
-    # Open the file and read its content
     with open(file_path, 'r', encoding='utf-8') as file:
         for line in file:
-            # Strip leading/trailing spaces and add to the list if not empty
             stripped_line = line.strip()
             if stripped_line:
                 query_list.append(stripped_line)
